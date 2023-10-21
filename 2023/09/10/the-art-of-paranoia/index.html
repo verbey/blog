@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="When the tin foil hat of self-proclaimed privsec enthusiasts starts damaging the brain.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Art of Paranoia by Shi Zo">
+<meta property="og:url" content="http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/">
+<meta property="og:site_name" content="Verblog">
+<meta property="og:description" content="When the tin foil hat of self-proclaimed privsec enthusiasts starts damaging the brain.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.pinimg.com/originals/dd/11/e2/dd11e28eca8c75556a140ff8e7b230d1--hip-hip-fun-time.jpg">
+<meta property="article:published_time" content="2023-09-10T19:28:58.000Z">
+<meta property="article:modified_time" content="2023-10-21T12:59:29.604Z">
+<meta property="article:author" content="Verbiturum">
+<meta property="article:tag" content="personal">
+<meta property="article:tag" content="cybersecurity">
+<meta property="article:tag" content="privacy">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.pinimg.com/originals/dd/11/e2/dd11e28eca8c75556a140ff8e7b230d1--hip-hip-fun-time.jpg">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/blog/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/blog/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>The Art of Paranoia by Shi Zo</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/blog/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/blog/atom.xml" title="Verblog" type="application/atom+xml">
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/blog/">Home</a></li><!--
+     --><!--
+       --><li><a href="/blog/archives">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://codeberg.org/verbiturum">Projects</a></li><!--
+     --><!--
+       --><li><a href="/blog/atom.xml">RSS</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/blog/2023/10/07/odin-project-thoughts/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/blog/2023/09/06/reading-about-cryptology/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/&text=The Art of Paranoia by Shi Zo"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/&title=The Art of Paranoia by Shi Zo"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/&is_video=false&description=The Art of Paranoia by Shi Zo"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=The Art of Paranoia by Shi Zo&body=Check out this article: http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/&title=The Art of Paranoia by Shi Zo"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/&title=The Art of Paranoia by Shi Zo"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/&title=The Art of Paranoia by Shi Zo"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/&title=The Art of Paranoia by Shi Zo"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/&name=The Art of Paranoia by Shi Zo&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/&t=The Art of Paranoia by Shi Zo"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        The Art of Paranoia by Shi Zo
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Verbiturum</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2023-09-10T19:28:58.000Z" class="dt-published" itemprop="datePublished">2023-09-10</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/blog/tags/cybersecurity/" rel="tag">cybersecurity</a>, <a class="p-category" href="/blog/tags/personal/" rel="tag">personal</a>, <a class="p-category" href="/blog/tags/privacy/" rel="tag">privacy</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <p>There are communities on the Internet focused around privacy and security and I, for a long time, participated in them as a member of different chat rooms and forums. Around 6 months ago I got really tired of all of it as they are filled with people with absolutely 0 understanding what a threat model is, giving advice to others that not only wouldn’t help people with anything but defending against <em>mostly</em> imaginary spies but could even hurt their life.</p>
+<p>“Defend against this”, “defend against that”, “always be paranoidal”, “it’s going to help you with security!” Sure, buddy. That’s totally a good reason to cut yourself away from society. </p>
+<p>Lose all your friends because you’re not on any social media anymore for protecting yourself from Mark Zuckerberg reading your thoughts. You wouldn’t want some evil corporation analyzing your <em>public</em> posts, would you? Disable that telemetry in an open source project that lets you see what data is sent — they could be spying on you! It’s not like they just want to improve their software.</p>
+<p>I’m super grateful to Privacy Guides and the New Oil for suggesting reading articles about threat modeling first. Still, that doesn’t save them from people not reading it. </p>
+<p>In my opinion, when paranoidal freaks start sharing their awesome takes, then moderators should step in.</p>
+<p><a target="_blank" rel="noopener" href="https://discuss.privacyguides.net/t/keepass/11456/5">You shouldn’t use a popular and actually good password manager software because turns out… it could have security vulnerabilities too! Mindblowing!</a></p>
+<p><a target="_blank" rel="noopener" href="https://discuss.privacyguides.net/t/clearnet-email-that-can-be-registered-via-tor/11572">I’m going to use Tor for registering a clearnet email to be “anonymous”</a></p>
+<p><a target="_blank" rel="noopener" href="https://discuss.privacyguides.net/t/can-we-not-use-youtube/10416">Should I not use a platform that provides free hosting, automatically creates subtitles, rerenders my videos into different resolutions for free etc. even after I took measures to protect my privacy because Google dares to use data to profit off it</a></p>
+<p>Here is one of the recent ones and my favourite so far:</p>
+<p><a target="_blank" rel="noopener" href="https://beehaw.org/comment/1153733">Using YouTube is abused wife mentality</a></p>
+<p><img src="https://i.pinimg.com/originals/dd/11/e2/dd11e28eca8c75556a140ff8e7b230d1--hip-hip-fun-time.jpg" alt="An image of a laptop covered in tin foil. Bottom text reading &quot;Your move, NSA&quot;"></p>
+<p>Rhetoric like the one provided above is all over the place: on Reddit, on Lemmy, on Twitter, on random forums, in Matrix chatrooms, in XMPP chatrooms, in YouTube videos with clickbaitish thumbnails and titles etc.</p>
+<p>Moreover, the tin foil hat society often doesn’t even know that security is, like all matter and thus all other processes and objects, is in the state of constant motion. </p>
+<p>Motion is the way how matter exists: there are no absolute states, there are no invincible armies, there are no unbeatable chess players, there are no humans that don’t do any mistakes etc.</p>
+<p>Offence and defence sides are always thinking of new tactics and strategies to make their opponents’ lives harder. A security vulnerability is going to be patched, a security system is going to be breached.</p>
+<p>They seek absolutely absolute security that they can just apply magically to satisfy their paranoia. That’s why many maintainers and contributors to privacy communities often have to explicitly state that FOSS, for example, does not automatically mean security although it has better potential for being audited.</p>
+<p>Privacy is a human right and it’s great to see people fighting for it so everyone can enjoy it. Projects raising concerns about privacy in the modern world are good because they show that modern tech collects way more data than it is actually needed to operate. </p>
+<p>The problem is that the topic is able to easily trigger paranoia in people and many seem to be ready to introduce hardships into their life to protect themselves from a threat that was never there to begin with.</p>
+<p>Community space of privsec projects can be described as an endless journey of sad cringe for the reasons stated above. That’s why I left it and that’s why I don’t recommend falling into that rabbit hole.</p>
+<p>If what you are reading is making you want to leave society and run away into the woods then maybe you should stop reading it and take your time to process what in the bloody hell did you just read. Just maybe.</p>
+<hr>
+<p>Thank you for taking the time to actually read this. If you have any questions or have any feedback feel free to reach out to me through Fediverse by writing to my Akkoma account that is linked in every post under my nickname and bio.</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/blog/">Home</a></li>
+        
+          <li><a href="/blog/archives">Writing</a></li>
+        
+          <li><a target="_blank" rel="noopener" href="https://codeberg.org/verbiturum">Projects</a></li>
+        
+          <li><a href="/blog/atom.xml">RSS</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/&text=The Art of Paranoia by Shi Zo"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/&title=The Art of Paranoia by Shi Zo"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/&is_video=false&description=The Art of Paranoia by Shi Zo"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=The Art of Paranoia by Shi Zo&body=Check out this article: http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/&title=The Art of Paranoia by Shi Zo"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/&title=The Art of Paranoia by Shi Zo"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/&title=The Art of Paranoia by Shi Zo"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/&title=The Art of Paranoia by Shi Zo"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/&name=The Art of Paranoia by Shi Zo&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/&t=The Art of Paranoia by Shi Zo"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2023
+    Verbiturum
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/blog/">Home</a></li><!--
+     --><!--
+       --><li><a href="/blog/archives">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://codeberg.org/verbiturum">Projects</a></li><!--
+     --><!--
+       --><li><a href="/blog/atom.xml">RSS</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+ 
+  <link
+    rel="preload"
+    href="/blog/lib/font-awesome/css/all.min.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <noscript
+    ><link
+      rel="stylesheet"
+      href="/blog/lib/font-awesome/css/all.min.css"
+  /></noscript>
+
+
+    <!-- jquery -->
+
+  
+<script src="/blog/lib/jquery/jquery.min.js"></script>
+
+
+
+
+
+<!-- clipboard -->
+
+  
+    
+<script src="/blog/lib/clipboard/clipboard.min.js"></script>
+
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/blog/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>

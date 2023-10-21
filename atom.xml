@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Verblog</title>
+  
+  
+  <link href="http://verbey.github.io/blog/atom.xml" rel="self"/>
+  
+  <link href="http://verbey.github.io/blog/"/>
+  <updated>2023-10-21T15:55:46.330Z</updated>
+  <id>http://verbey.github.io/blog/</id>
+  
+  <author>
+    <name>Verbiturum</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://verbey.github.io/blog/2023/10/21/hello-world/"/>
+    <id>http://verbey.github.io/blog/2023/10/21/hello-world/</id>
+    <published>2023-10-21T15:55:46.330Z</published>
+    <updated>2023-10-21T15:55:46.330Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Just do it. A motivational post</title>
+    <link href="http://verbey.github.io/blog/2023/10/21/just-do-it/"/>
+    <id>http://verbey.github.io/blog/2023/10/21/just-do-it/</id>
+    <published>2023-10-21T13:20:30.000Z</published>
+    <updated>2023-10-21T13:00:40.614Z</updated>
+    
+    <content type="html"><![CDATA[<p>One thing that I noticed about people that excel in some field is that they use the time when they’re bored to do something related to the said field.</p><p>When they have free time instead of lying around being bored, browsing social media feed they would solve Math problems, program, do language exercises etc.</p><p>They are good at something because they do it. They do it because they like it. That’s why they do it <em>regulary</em>. </p><p>This part is often overlooked. People want to excel at something overnight, except it never works like that. You can’t get big muscles unless you exercise regulary, you can’t get a Ph D for reading about a subject for a whole day non-stop.</p><p>It is all a matter of dedication over a long period of time. Even if you don’t like doing it, you will finish it faster and better through doing smaller bits.</p><p>That thing that you want to do but keep reappointing to a latter date, do you <em>really</em> think you can get grasp of it without starting now?</p><p>You can do it and you know it, but you procrastinate because you don’t know what to do, until the moment comes and you feel brave enough to wander into the field for an extended period of time without having the slightest idea of what you are doing.</p><p>As always, quantity forms quality, so to “conquer” the quality of something hard and unknown you have to divide-and-conquer your way, which best works when doing it on set intervals of time.</p><p>Stop the procrastionation. I believe in you. </p>]]></content>
+    
+    
+    <summary type="html">Some motivation for those who might need it..</summary>
+    
+    
+    
+    
+    <category term="personal" scheme="http://verbey.github.io/blog/tags/personal/"/>
+    
+    <category term="motivation" scheme="http://verbey.github.io/blog/tags/motivation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>My thoughts on the Odin Project</title>
+    <link href="http://verbey.github.io/blog/2023/10/07/odin-project-thoughts/"/>
+    <id>http://verbey.github.io/blog/2023/10/07/odin-project-thoughts/</id>
+    <published>2023-10-07T13:20:30.000Z</published>
+    <updated>2023-10-21T13:00:04.587Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Pre-amble"><a href="#Pre-amble" class="headerlink" title="Pre-amble"></a>Pre-amble</h1><p>I have already mentioned in the introduction post that I follow <a href="https://www.theodinproject.com/">the Odin Project</a> to study web development. As of now, I am at 92% of the JavaScript course of the <strong>Full Stack Javascript</strong> path. </p><p>Note: after finishing the foundations course I decided to go full stack JS, because I was already familiar with Node.js. For this reason I can’t exactly judge the Ruby on Rails course but I suspect the strong points of the path I chose could be applied to the Ruby on Rails one.</p><p>Yep, I didn’t finish the curriculum yet, you read that right. Nevertheless, I think I am at point where I could provide some <em>food for thought</em> for those thinking if starting TOP is worth it and maybe deciding between courses&#x2F;platforms&#x2F;guides&#x2F;books to study web development.</p><p><em>Again, this is very important: the post below is not a review of the course as a whole but rather a collection of my thoughts about TOP so far.</em></p><h1 id="Material"><a href="#Material" class="headerlink" title="Material"></a>Material</h1><h2 id="General"><a href="#General" class="headerlink" title="General"></a>General</h2><p>The Odin Project does not throw you right into programming in the way most other free resources do, but rather introduce you to some basic concepts that exist in the field. Entry-level material is provided, they make you form your dev environment gradually, never introduce too much concepts as once etc.</p><p>You will never be taught a concept without being provided with ideas how to practice it: from a full-blown project to smaller exercises. You are <em>actively</em> discouraged from skipping practice.</p><p>There is a lesson at the beginning talking about motivation and <a href="https://www.theodinproject.com/lessons/foundations-motivation-and-mindset">mindset</a>. This lesson manages to explain things very coherently, in a way newcomers <em>need</em> to hear, and after finishing it you will be set for studying.</p><h2 id="Vanilla-first"><a href="#Vanilla-first" class="headerlink" title="Vanilla first"></a>Vanilla first</h2><p>TOP is trying not to throw people into frameworks right away, which I see as a very good thing because modern CSS and JS are very powerful and are catching up to their post processors and frameworks.</p><p>By learning vanilla first, a student gets a strong foundation of technology they will use in their job instead of relying wholely on some third-party technology that could pull the rug anytime or become unmaintained.</p><p>This is also good news for the web as a whole, because it teaches people that building simple websites with no 10000 bloated libraries is possible and could even be much faster.</p><h2 id="Additional-resources"><a href="#Additional-resources" class="headerlink" title="Additional resources"></a>Additional resources</h2><p>The course gives you articles and videos as additional resources that are really good and are not actually <em>required</em> to grasp the concept you have been introduced to. So, if you are in a rush, you can skip it completely without losing anything that is important for the basics. </p><p>Though, if you do check it the additional resource, you would understand the concept better or learn some obscure thing that might help you with some non-standard situation or get information on how to avoid it completely.</p><p>Sometimes the additional resources section could feel mundane and because the resources provided might only be a rephrasal of what was already said in the assignment section, but this is not the end of the world and is only true for some rare cases.</p><h1 id="Dev-environment"><a href="#Dev-environment" class="headerlink" title="Dev environment"></a>Dev environment</h1><h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>The course makes you use the <a href="https://git-scm.com/">git</a> version control system <em>early on</em>, which is I think is super important. It’s the small details of TOP that make it so good. You are introduced to git from very early on, which will help you later so much when you will need more advanced features, because by the time you will comfortable with the basics.</p><p>Can we talk about modern day coding without git? No. Working on a bigger project without using git is like going for a long ride on a car without bringing a navigator or at the very least a paper map. You can do it, but <em>why would you</em>?</p><h2 id="GNU-Linux"><a href="#GNU-Linux" class="headerlink" title="GNU&#x2F;Linux"></a>GNU&#x2F;Linux</h2><p>A very important part of the Odin project is that they force you to use GNU&#x2F;Linux for your development work. A UNIX-like system will make your life much easier and won’t introduce any issues because you are studying web development and browsers, surprise, are identical across operating systems.</p><p>Staying on Windows will cause you a lot of time fighting the OS to get something to work, like Node.js, which could be done with a simple command shell script in a minute on a Unix-like system.</p><p>People are used to “Windows” often meaning “easier” and instinctively would want to stay there but in our particular case, switching to a UNIX-like system would actually <em>save</em> time.</p><h1 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h1><h2 id="Feedback"><a href="#Feedback" class="headerlink" title="Feedback"></a>Feedback</h2><p>I loved getting help in the community. You see, you are actually encouraged to do the assignment yourself as much as you can, so even when you do ask for help, you will be <em>directed</em> towards the solution but it won’t be revealed to you. This way, you still develop the thought process that should go in your brain when you solve a problem yourself, but you achieve it faster.</p><p><strong>Feedback</strong> on projects and getting helps when you’re stuck at some part <strong>is a strong side of TOP</strong>. You can share your projects with the community. It is also possible to share your projects through the website, where solutions are displayed based on the amount of stars each projects receives.</p><h2 id="Project-submissions"><a href="#Project-submissions" class="headerlink" title="Project submissions"></a>Project submissions</h2><p><strong>Except when it isn’t</strong>. You see, TOP is volunteer-driven so there is a big chance your project would sink among countless others. On the project solutions section of the website, usually the ones with <em>appealing design</em> get to the top, even if they lack some features or use bad coding practices. I think it would be great if the maintainers chose some reference solutions, so if someone decided to peek at the solution, they would at the very least see a good one that might make them learn a thing or two.</p><p>Also, it would have been nice if TOP pushed newer solutions for others to see, so it’s not impossible to get noticed just because you were late to the party.</p><h2 id="Discord"><a href="#Discord" class="headerlink" title="Discord"></a>Discord</h2><p>Their community is hosted on Discord. It is a reasonable solution considering TOP is free but now that they have started accepting donations, I <em>really</em> hope some of that would go to host a proper forum using software such as Disqus. Discord can be great for getting quick help and general discussion but is not very suitable for making announcements and sharing help.</p><h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p>It should be noted though that any negative points are fixable because the Odin project is open source so you could contribute to it if you think some parts of it need redaction. The project is in the constant state of improving and updating its resources, which is something that is harder to achieve with books.</p><p>The Odin Project is one of the cases where free is better than a lot of paid alternatives, and if you are not sure where to start your career in webdev, I suggest you go with TOP. It may have some problems here and there but they are insignificant and can be completely dismissed when we consider the free nature of the project. The self-paced learning, diversive types of study material, the coherent structure and practice-oriented studying helped me get out of <a href="https://www.reddit.com/r/learnprogramming/comments/qrlx5m/what_exactly_is_tutorial_hell/">tutorial hell</a> and I plan to donate to the maintainers after I land my first job in web development. </p><p>Happy coding!</p>]]></content>
+    
+    
+    <summary type="html">Reasons why I like the Odin Project.</summary>
+    
+    
+    
+    
+    <category term="programming" scheme="http://verbey.github.io/blog/tags/programming/"/>
+    
+    <category term="computers" scheme="http://verbey.github.io/blog/tags/computers/"/>
+    
+    <category term="the odin project" scheme="http://verbey.github.io/blog/tags/the-odin-project/"/>
+    
+    <category term="thoughts" scheme="http://verbey.github.io/blog/tags/thoughts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The Art of Paranoia by Shi Zo</title>
+    <link href="http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/"/>
+    <id>http://verbey.github.io/blog/2023/09/10/the-art-of-paranoia/</id>
+    <published>2023-09-10T19:28:58.000Z</published>
+    <updated>2023-10-21T12:59:29.604Z</updated>
+    
+    <content type="html"><![CDATA[<p>There are communities on the Internet focused around privacy and security and I, for a long time, participated in them as a member of different chat rooms and forums. Around 6 months ago I got really tired of all of it as they are filled with people with absolutely 0 understanding what a threat model is, giving advice to others that not only wouldn’t help people with anything but defending against <em>mostly</em> imaginary spies but could even hurt their life.</p><p>“Defend against this”, “defend against that”, “always be paranoidal”, “it’s going to help you with security!” Sure, buddy. That’s totally a good reason to cut yourself away from society. </p><p>Lose all your friends because you’re not on any social media anymore for protecting yourself from Mark Zuckerberg reading your thoughts. You wouldn’t want some evil corporation analyzing your <em>public</em> posts, would you? Disable that telemetry in an open source project that lets you see what data is sent — they could be spying on you! It’s not like they just want to improve their software.</p><p>I’m super grateful to Privacy Guides and the New Oil for suggesting reading articles about threat modeling first. Still, that doesn’t save them from people not reading it. </p><p>In my opinion, when paranoidal freaks start sharing their awesome takes, then moderators should step in.</p><p><a href="https://discuss.privacyguides.net/t/keepass/11456/5">You shouldn’t use a popular and actually good password manager software because turns out… it could have security vulnerabilities too! Mindblowing!</a></p><p><a href="https://discuss.privacyguides.net/t/clearnet-email-that-can-be-registered-via-tor/11572">I’m going to use Tor for registering a clearnet email to be “anonymous”</a></p><p><a href="https://discuss.privacyguides.net/t/can-we-not-use-youtube/10416">Should I not use a platform that provides free hosting, automatically creates subtitles, rerenders my videos into different resolutions for free etc. even after I took measures to protect my privacy because Google dares to use data to profit off it</a></p><p>Here is one of the recent ones and my favourite so far:</p><p><a href="https://beehaw.org/comment/1153733">Using YouTube is abused wife mentality</a></p><p><img src="https://i.pinimg.com/originals/dd/11/e2/dd11e28eca8c75556a140ff8e7b230d1--hip-hip-fun-time.jpg" alt="An image of a laptop covered in tin foil. Bottom text reading &quot;Your move, NSA&quot;"></p><p>Rhetoric like the one provided above is all over the place: on Reddit, on Lemmy, on Twitter, on random forums, in Matrix chatrooms, in XMPP chatrooms, in YouTube videos with clickbaitish thumbnails and titles etc.</p><p>Moreover, the tin foil hat society often doesn’t even know that security is, like all matter and thus all other processes and objects, is in the state of constant motion. </p><p>Motion is the way how matter exists: there are no absolute states, there are no invincible armies, there are no unbeatable chess players, there are no humans that don’t do any mistakes etc.</p><p>Offence and defence sides are always thinking of new tactics and strategies to make their opponents’ lives harder. A security vulnerability is going to be patched, a security system is going to be breached.</p><p>They seek absolutely absolute security that they can just apply magically to satisfy their paranoia. That’s why many maintainers and contributors to privacy communities often have to explicitly state that FOSS, for example, does not automatically mean security although it has better potential for being audited.</p><p>Privacy is a human right and it’s great to see people fighting for it so everyone can enjoy it. Projects raising concerns about privacy in the modern world are good because they show that modern tech collects way more data than it is actually needed to operate. </p><p>The problem is that the topic is able to easily trigger paranoia in people and many seem to be ready to introduce hardships into their life to protect themselves from a threat that was never there to begin with.</p><p>Community space of privsec projects can be described as an endless journey of sad cringe for the reasons stated above. That’s why I left it and that’s why I don’t recommend falling into that rabbit hole.</p><p>If what you are reading is making you want to leave society and run away into the woods then maybe you should stop reading it and take your time to process what in the bloody hell did you just read. Just maybe.</p><hr><p>Thank you for taking the time to actually read this. If you have any questions or have any feedback feel free to reach out to me through Fediverse by writing to my Akkoma account that is linked in every post under my nickname and bio.</p>]]></content>
+    
+    
+    <summary type="html">When the tin foil hat of self-proclaimed privsec enthusiasts starts damaging the brain.</summary>
+    
+    
+    
+    
+    <category term="personal" scheme="http://verbey.github.io/blog/tags/personal/"/>
+    
+    <category term="cybersecurity" scheme="http://verbey.github.io/blog/tags/cybersecurity/"/>
+    
+    <category term="privacy" scheme="http://verbey.github.io/blog/tags/privacy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Finished reading about mathematical foundations of cryptology</title>
+    <link href="http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/"/>
+    <id>http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/</id>
+    <published>2023-09-06T16:45:00.000Z</published>
+    <updated>2023-10-21T12:58:48.077Z</updated>
+    
+    <content type="html"><![CDATA[<p>Greetings, my dear and most beloved reader! </p><p>Around a year ago I bought myself a book about cybersecurity. Being a privacybro in the past, I, naturally, wondered how all those fancy encryption algorithms work. That’s why when I learned my uni library has a book on the topic I thought to give reading it a try.</p><p>Today (“Today” stands for “a month ago”, it took me a long time to actually setup my blog and publish this) I am pleased to announce to the world that I have finished reading Chapter 2 of it, named “Mathematical foundations of Cryptology”. I don’t want to lie to you, it was a hard, slow read and I didn’t really grasp <em>all</em> concepts presented in it but now I know what is the logic behind some of the tools I use daily and feel slightly smarter.</p><p>Behind most of cryptology are one-way functions, ones that are easy to compute if you know all parameters but make it hard to “decompute” passed values from the result. Isn’t it impressive how something like discrete logarithm can help you secure communication against another human? Under things that I once categorised as those that border magic lie such simple down-to-Earth concepts. Quality comes from quantity, as Hegel put it over a hundred years ago, and so complexities come from certain amount of simplicities. </p><p>If you’re interested in how things work but don’t want to go into a huge amount of rabbit holes, then consider reading <a href="https://www.techtarget.com/searchsecurity/definition/cryptology">this article</a>, which, in my humble opinion, does a good job explaining things to people who don’t have the time or desire to learn about cryptology in detail and dive deeper into the topic.</p><p>I really want to try implementing the algorithms presented in the book but I also want and have to do a lot of other things, so this is, sadly, not my number 1 priority. Makes me wish there were more than 24 hours in a day so I could pick more past times and hobbies like that.</p><hr><p>Thank you for taking the time to actually read this. If you have any questions or have any feedback feel free to reach out to me through Fediverse by writing to my Akkoma account that is linked in every post under my nickname and bio. Don’t worry, I don’t bite, I promise.</p>]]></content>
+    
+    
+    <summary type="html">Cryptology is hard but really interesting.</summary>
+    
+    
+    
+    
+    <category term="computers" scheme="http://verbey.github.io/blog/tags/computers/"/>
+    
+    <category term="cryptology" scheme="http://verbey.github.io/blog/tags/cryptology/"/>
+    
+    <category term="cybersecurity" scheme="http://verbey.github.io/blog/tags/cybersecurity/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>First!</title>
+    <link href="http://verbey.github.io/blog/2023/09/04/first/"/>
+    <id>http://verbey.github.io/blog/2023/09/04/first/</id>
+    <published>2023-09-03T21:07:04.000Z</published>
+    <updated>2023-10-21T12:53:31.121Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Introduce-yourself"><a href="#Introduce-yourself" class="headerlink" title="Introduce yourself"></a>Introduce yourself</h1><p>I’m a self-taught web developer from Eastern Europe organising a little corner for my thoughts on the Internet. My interests are:</p><ul><li><p>Software engineering (Web development in particular). I am currently following the Odin Project, which is focused on Full Stack development, but I plan to move to Back end in the future. My language of choice is JavaScript (Sorry, “Anything other than C is bloat” folks). I chose it because it’s simple, has good looking syntax and is very popular. I also know basics of C&#x2F;C++. </p></li><li><p>GNU&#x2F;Linux. Messing around with my system, feels super fun and helps expand my knowledge of how OSes work.</p></li><li><p>Geeky stuff: anime, tv series, films, videogames. I think I could write reviews for any of these but don’t expect too much (×﹏×)</p></li></ul><h1 id="Why"><a href="#Why" class="headerlink" title="Why?"></a>Why?</h1><p>I love longreads and I always wanted to be able to impress others with my writing as much as some of longreads I read impressed me. I learned not so long ago about the Indie Web and thought giving my own blog a try would be a great idea.</p><h1 id="So-you’re-yet-another-generic-nerd-like-98-of-the-other-people-on-the-Indie-Web"><a href="#So-you’re-yet-another-generic-nerd-like-98-of-the-other-people-on-the-Indie-Web" class="headerlink" title="So you’re yet another generic nerd like 98% of the other people on the Indie Web?"></a>So you’re yet another generic nerd like 98% of the other people on the Indie Web?</h1><p>Yes :)</p><h1 id="Are-you-going-to-be-writing-the-same-stuff-those-nerds-do"><a href="#Are-you-going-to-be-writing-the-same-stuff-those-nerds-do" class="headerlink" title="Are you going to be writing the same stuff those nerds do?"></a>Are you going to be writing the same stuff those nerds do?</h1><p>No. I want to write original content, being a reader of a lot of blogs, I, myself, am tired of constant whining about social media and explanations why should <em>you</em> write and&#x2F;or move to Indie Web.</p><h1 id="Why-does-it-feel-like-a-lot-of-stuff-is-missing"><a href="#Why-does-it-feel-like-a-lot-of-stuff-is-missing" class="headerlink" title="Why does it feel like a lot of stuff is missing?"></a>Why does it feel like a lot of stuff is missing?</h1><p>I am still figuring stuff out so the blog page may seem incomplete. Because it is. As of right now, I didn’t even get my hands out ot figuring out how to access RSS of my blog.</p><h1 id="What-powers-the-blog"><a href="#What-powers-the-blog" class="headerlink" title="What powers the blog?"></a>What powers the blog?</h1><p>The website is generated from Markdown text files using <strong>Hugo</strong> with <strong>Blowfish</strong> theme. It is hosted for free at <strong>Github Pages</strong>.</p><h1 id="Why-Github-Pages-rather-than-Neocities-or-GitLab-Pages-or-Codeberg-Pages"><a href="#Why-Github-Pages-rather-than-Neocities-or-GitLab-Pages-or-Codeberg-Pages" class="headerlink" title="Why Github Pages rather than Neocities or GitLab Pages or Codeberg Pages?"></a>Why Github Pages rather than Neocities or GitLab Pages or Codeberg Pages?</h1><p>Because Github is owned by Microsoft and lets me host my blog for free. Putting load on a corporate server feels good.</p><h1 id="Anything-else-you’ve-got-to-say"><a href="#Anything-else-you’ve-got-to-say" class="headerlink" title="Anything else you’ve got to say?"></a>Anything else you’ve got to say?</h1><p>Thank you for finding this blog and reading up to this moment. Stay safe</p>]]></content>
+    
+    
+    <summary type="html">Wake up, babe, a new blog just dropped!</summary>
+    
+    
+    
+    
+    <category term="meta" scheme="http://verbey.github.io/blog/tags/meta/"/>
+    
+    <category term="personal" scheme="http://verbey.github.io/blog/tags/personal/"/>
+    
+  </entry>
+  
+</feed>

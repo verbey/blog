@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Cryptology is hard but really interesting.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Finished reading about mathematical foundations of cryptology">
+<meta property="og:url" content="http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/">
+<meta property="og:site_name" content="Verblog">
+<meta property="og:description" content="Cryptology is hard but really interesting.">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-09-06T16:45:00.000Z">
+<meta property="article:modified_time" content="2023-10-21T12:58:48.077Z">
+<meta property="article:author" content="Verbiturum">
+<meta property="article:tag" content="computers">
+<meta property="article:tag" content="cryptology">
+<meta property="article:tag" content="cybersecurity">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/blog/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/blog/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Finished reading about mathematical foundations of cryptology</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/blog/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/blog/atom.xml" title="Verblog" type="application/atom+xml">
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/blog/">Home</a></li><!--
+     --><!--
+       --><li><a href="/blog/archives">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://codeberg.org/verbiturum">Projects</a></li><!--
+     --><!--
+       --><li><a href="/blog/atom.xml">RSS</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/blog/2023/09/10/the-art-of-paranoia/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/blog/2023/09/04/first/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/&text=Finished reading about mathematical foundations of cryptology"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/&title=Finished reading about mathematical foundations of cryptology"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/&is_video=false&description=Finished reading about mathematical foundations of cryptology"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Finished reading about mathematical foundations of cryptology&body=Check out this article: http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/&title=Finished reading about mathematical foundations of cryptology"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/&title=Finished reading about mathematical foundations of cryptology"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/&title=Finished reading about mathematical foundations of cryptology"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/&title=Finished reading about mathematical foundations of cryptology"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/&name=Finished reading about mathematical foundations of cryptology&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/&t=Finished reading about mathematical foundations of cryptology"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Finished reading about mathematical foundations of cryptology
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Verbiturum</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2023-09-06T16:45:00.000Z" class="dt-published" itemprop="datePublished">2023-09-06</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/blog/tags/computers/" rel="tag">computers</a>, <a class="p-category" href="/blog/tags/cryptology/" rel="tag">cryptology</a>, <a class="p-category" href="/blog/tags/cybersecurity/" rel="tag">cybersecurity</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <p>Greetings, my dear and most beloved reader! </p>
+<p>Around a year ago I bought myself a book about cybersecurity. Being a privacybro in the past, I, naturally, wondered how all those fancy encryption algorithms work. That’s why when I learned my uni library has a book on the topic I thought to give reading it a try.</p>
+<p>Today (“Today” stands for “a month ago”, it took me a long time to actually setup my blog and publish this) I am pleased to announce to the world that I have finished reading Chapter 2 of it, named “Mathematical foundations of Cryptology”. I don’t want to lie to you, it was a hard, slow read and I didn’t really grasp <em>all</em> concepts presented in it but now I know what is the logic behind some of the tools I use daily and feel slightly smarter.</p>
+<p>Behind most of cryptology are one-way functions, ones that are easy to compute if you know all parameters but make it hard to “decompute” passed values from the result. Isn’t it impressive how something like discrete logarithm can help you secure communication against another human? Under things that I once categorised as those that border magic lie such simple down-to-Earth concepts. Quality comes from quantity, as Hegel put it over a hundred years ago, and so complexities come from certain amount of simplicities. </p>
+<p>If you’re interested in how things work but don’t want to go into a huge amount of rabbit holes, then consider reading <a target="_blank" rel="noopener" href="https://www.techtarget.com/searchsecurity/definition/cryptology">this article</a>, which, in my humble opinion, does a good job explaining things to people who don’t have the time or desire to learn about cryptology in detail and dive deeper into the topic.</p>
+<p>I really want to try implementing the algorithms presented in the book but I also want and have to do a lot of other things, so this is, sadly, not my number 1 priority. Makes me wish there were more than 24 hours in a day so I could pick more past times and hobbies like that.</p>
+<hr>
+<p>Thank you for taking the time to actually read this. If you have any questions or have any feedback feel free to reach out to me through Fediverse by writing to my Akkoma account that is linked in every post under my nickname and bio. Don’t worry, I don’t bite, I promise.</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/blog/">Home</a></li>
+        
+          <li><a href="/blog/archives">Writing</a></li>
+        
+          <li><a target="_blank" rel="noopener" href="https://codeberg.org/verbiturum">Projects</a></li>
+        
+          <li><a href="/blog/atom.xml">RSS</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/&text=Finished reading about mathematical foundations of cryptology"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/&title=Finished reading about mathematical foundations of cryptology"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/&is_video=false&description=Finished reading about mathematical foundations of cryptology"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Finished reading about mathematical foundations of cryptology&body=Check out this article: http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/&title=Finished reading about mathematical foundations of cryptology"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/&title=Finished reading about mathematical foundations of cryptology"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/&title=Finished reading about mathematical foundations of cryptology"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/&title=Finished reading about mathematical foundations of cryptology"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/&name=Finished reading about mathematical foundations of cryptology&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://verbey.github.io/blog/2023/09/06/reading-about-cryptology/&t=Finished reading about mathematical foundations of cryptology"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2023
+    Verbiturum
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/blog/">Home</a></li><!--
+     --><!--
+       --><li><a href="/blog/archives">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://codeberg.org/verbiturum">Projects</a></li><!--
+     --><!--
+       --><li><a href="/blog/atom.xml">RSS</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+ 
+  <link
+    rel="preload"
+    href="/blog/lib/font-awesome/css/all.min.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <noscript
+    ><link
+      rel="stylesheet"
+      href="/blog/lib/font-awesome/css/all.min.css"
+  /></noscript>
+
+
+    <!-- jquery -->
+
+  
+<script src="/blog/lib/jquery/jquery.min.js"></script>
+
+
+
+
+
+<!-- clipboard -->
+
+  
+    
+<script src="/blog/lib/clipboard/clipboard.min.js"></script>
+
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/blog/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
