@@ -6,7 +6,7 @@
   <link href="http://verbey.github.io/blog/atom.xml" rel="self"/>
   
   <link href="http://verbey.github.io/blog/"/>
-  <updated>2023-11-08T19:39:36.301Z</updated>
+  <updated>2023-12-16T22:57:48.778Z</updated>
   <id>http://verbey.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Update on how things are going</title>
+    <link href="http://verbey.github.io/blog/2023/12/17/update-on-how-things-are-going/"/>
+    <id>http://verbey.github.io/blog/2023/12/17/update-on-how-things-are-going/</id>
+    <published>2023-12-16T22:00:00.000Z</published>
+    <updated>2023-12-16T22:57:48.778Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="A-little-preamble"><a href="#A-little-preamble" class="headerlink" title="A little preamble"></a>A little preamble</h2><p>When I published my last post, <a href="/blog/2023/11/08/useless-work/">Useless work</a>, I couldn’t even imagine it would only go downhill from there.</p><p>Now, let’s talk about why I haven’t posted anything in more than a month.</p><h2 id="Computer-Logic-Coursework"><a href="#Computer-Logic-Coursework" class="headerlink" title="Computer Logic Coursework"></a>Computer Logic Coursework</h2><p>Seriously, when you hear you will have to write 100+ pages of a coursework by hand, you think it can’t get any better than this.</p><p><img src="https://i.ibb.co/HG7B5P1/handwriting-coursework.jpg" alt="Willy Wonka meme asking in patronising attitude whether you think handwriting coursework is awful"></p><p>At the very least, the subject for which I had to do that turned out to work by the “carrot and stick” formula. For my immeasurable suffering and sleepless nights, I was offered a 95% score on the subject and a 90% score on the coursework itself. </p><p>If you hand in the coursework before the deadline, which is not that hard, to be honest, then you are able to have the exam held online. Totally worth the hassle.</p><p>Oh, and I also discovered how much hatred I can have for 159 A4 pages of paper — <em>a lot</em>.</p><h2 id="Computer-Electronics"><a href="#Computer-Electronics" class="headerlink" title="Computer Electronics"></a>Computer Electronics</h2><p>Do you know what is <em>not</em> worth the hassle, though? Computer electronics assignments!</p><p>The assignments are dead simple: replicate a scheme in Multisim, make some screenshots. Then calculate some formulas and compare the obtained data to that on the screenshots. It’s quite simple, despite taking a lot of time.</p><p>Too bad, the old fart checking the assignment doesn’t want your life to be simple.</p><p>To actually get a grade for the assignment, you must go through a circle of hell called “Захист роботи” (literally translated as “Defense of the assignment”, I can’t think of a proper alternative in English at the moment). You must answer a bunch of question from the professor, which are <em>slightly SIGNIFICANTLY</em> harder to answer than whatever you were preparing for.</p><p><img src="https://i.ibb.co/s34H6KW/class-homework-exam.jpg" alt="Meme about homework assignments that are always harder than classwork, and exam questions being the hardest"></p><blockquote><p>Oh, so you were doing what for this work? What? I can’t hear you, sorry. Anyway, here’s a scheme I just made up in my head, calculate the voltage at its exit. Ah, wrong answer, 0&#x2F;5 mark is what you deserve.</p></blockquote><p>The whole group has low grades now, because we weren’t lucky enough to get a teacher who wouldn’t sabotage us with his cool questions aimed at computer geniuses.</p><p>By the way, we had to write the theory for the assignments by hand. Digitalisation didn’t go well in this place, as I can see.</p><h2 id="Other-subjects"><a href="#Other-subjects" class="headerlink" title="Other subjects"></a>Other subjects</h2><p>Less interesting, but those still gave me enough pain in the ass.</p><p>Mostly because of how nice were the deadlines. Our assignments would be checked on week X, yet the lector thought it would be a good idea to put a deadline for uploading them to Moodle on week X-1.</p><blockquote><p>These students must have such a lot of time, gotta make them work hard for once in their life.<br>– Every professor ever, probably.</p></blockquote><p><img src="https://i.ibb.co/dJGY48X/5tg8wd.jpg"></p><h2 id="What’s-planned-next-for-the-blog"><a href="#What’s-planned-next-for-the-blog" class="headerlink" title="What’s planned next for the blog"></a>What’s planned next for the blog</h2><p>In between the suffering I’ve had different things happen and read some articles and played some games and coded some scripts etc. and all of that is <em>blog-post-idea-provoking</em>. Some posts are almost finished, for some I had only written down the titles.</p><p>Now that the semester has ended, I can dedicate time to the blog, which will make me and, hopefully, you happy.</p><p>I was also planning to get this place a nice domain, so you wouldn’t have to see the ugly GH Pages URL each time you go here.</p><p>May there be no misery in your life, reader.<br>Signing off,<br>Verbey</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;A-little-preamble&quot;&gt;&lt;a href=&quot;#A-little-preamble&quot; class=&quot;headerlink&quot; title=&quot;A little preamble&quot;&gt;&lt;/a&gt;A little preamble&lt;/h2&gt;&lt;p&gt;When I pub</summary>
+      
+    
+    
+    
+    
+    <category term="meta" scheme="http://verbey.github.io/blog/tags/meta/"/>
+    
+    <category term="personal" scheme="http://verbey.github.io/blog/tags/personal/"/>
+    
+    <category term="uni" scheme="http://verbey.github.io/blog/tags/uni/"/>
+    
+    <category term="studying" scheme="http://verbey.github.io/blog/tags/studying/"/>
+    
+  </entry>
   
   <entry>
     <title>Useless work</title>
@@ -105,9 +133,9 @@
     
     <category term="personal" scheme="http://verbey.github.io/blog/tags/personal/"/>
     
-    <category term="privacy" scheme="http://verbey.github.io/blog/tags/privacy/"/>
-    
     <category term="cybersecurity" scheme="http://verbey.github.io/blog/tags/cybersecurity/"/>
+    
+    <category term="privacy" scheme="http://verbey.github.io/blog/tags/privacy/"/>
     
   </entry>
   
@@ -128,9 +156,9 @@
     
     <category term="computers" scheme="http://verbey.github.io/blog/tags/computers/"/>
     
-    <category term="cybersecurity" scheme="http://verbey.github.io/blog/tags/cybersecurity/"/>
-    
     <category term="cryptology" scheme="http://verbey.github.io/blog/tags/cryptology/"/>
+    
+    <category term="cybersecurity" scheme="http://verbey.github.io/blog/tags/cybersecurity/"/>
     
   </entry>
   
