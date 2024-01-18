@@ -6,7 +6,7 @@
   <link href="http://verbey.github.io/blog/atom.xml" rel="self"/>
   
   <link href="http://verbey.github.io/blog/"/>
-  <updated>2023-12-26T21:27:29.861Z</updated>
+  <updated>2024-01-18T16:05:08.704Z</updated>
   <id>http://verbey.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Thumb-Key is great</title>
+    <link href="http://verbey.github.io/blog/2024/01/18/thumb-key-is-great/"/>
+    <id>http://verbey.github.io/blog/2024/01/18/thumb-key-is-great/</id>
+    <published>2024-01-17T22:00:00.000Z</published>
+    <updated>2024-01-18T16:05:08.704Z</updated>
+    
+    <content type="html"><![CDATA[<p>So, one day, I was browsing through the <a href="https://f-droid.org/">F-Droid</a> repository, and there I found the <a href="https://f-droid.org/en/packages/com.dessalines.thumbkey/">Thumb-Key</a> keyboard. It is, as you could guess, a keyboard, and it’s used by your thumb!</p><p>The layout is rather unique. Everything looks strange at first, but when you get used to it, things start making a lot of sense. The design is not random and you can read more about it <a href="https://www.exideas.com/ME/ICMI2003Paper.pdf">here</a>.</p><p>Do you remember the old keyboards on smaller phones? For each button, there are up to three or four letters, and you had to press the buttons a certain number of times for the right symbol to appear.</p><p>Thumb-Key is taking a similar approach, except you don’t have to tap the single key repeatedly, but rather slide your finger to the right letter.</p><p>Here is a screenshot so you can take a look:</p><p><img src="https://i.postimg.cc/zvhRqzbr/oxeu6kj016mllsv3.jpg" alt="Screenshot of Thumb-Key keyboard, aligned to the bottom left of the screen"></p><p>Screenshot of the Thumb-Key keyboard, aligned to the bottom left of the screen</p><p>I consider myself to be a fast typist, and I can achieve great typing speeds by using two thumbs on a traditional QWERTY keyboard. But I first saw the full power of Thumb-Key after the winter came and the temperatures dropped really low.</p><p>You see, when it’s cold outside, you really don’t want to pull your hands out of the (hopefully) warm pockets. And there are moments where you <em>have</em> to write something to your friends or family, or check some stuff.</p><p>How Thumb-Key helps with that is that now you only have to use one hand and type with decent speeds, so you will get a message written fast, without freezing.</p><p>It will take a while for you to get used to the keyboard, and at first, you will be very slow, but this keyboard can make you go from 0 to 100 unbelievably fast. Division of labour is a thing, so it would be really bad of you if you decided to learn something else other than your trade :)</p><p>The only thing that Thumb-Key couldn’t replace for me is inputting passwords. I can input long passwords much faster with my two hands, especially due to muscle memory. Which is not even that big of a deal, nobody forces you to remove the QWERTY keyboard when you install Thumb-Key.</p><p>I recommend this thing to everyone, just try it out, and you wouldn’t regret it. The keyboard will be an amazing tool in your arsenal and is also free in both meanings, which is a big bonus and a <em>must</em> for some.</p><hr><p>Written with love by me, edited with no emotions and corporate greed by EditGPT. Genuine recommendation, not an advertisement.</p>]]></content>
+    
+    
+    <summary type="html">Thumb-Key, the game-changing keyboard designed for one-thumb typing.</summary>
+    
+    
+    
+    
+    <category term="keyboards" scheme="http://verbey.github.io/blog/tags/keyboards/"/>
+    
+    <category term="mobile" scheme="http://verbey.github.io/blog/tags/mobile/"/>
+    
+    <category term="productivity" scheme="http://verbey.github.io/blog/tags/productivity/"/>
+    
+    <category term="apps" scheme="http://verbey.github.io/blog/tags/apps/"/>
+    
+  </entry>
   
   <entry>
     <title>Studying Japanese</title>
