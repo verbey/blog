@@ -10,7 +10,7 @@
   <id>http://verbey.github.io/blog/</id>
   
   <author>
-    <name>Verbey</name>
+    <name>Verbiturum</name>
     
   </author>
   
@@ -112,9 +112,9 @@
     
     
     
-    <category term="meta" scheme="http://verbey.github.io/blog/tags/meta/"/>
-    
     <category term="personal" scheme="http://verbey.github.io/blog/tags/personal/"/>
+    
+    <category term="meta" scheme="http://verbey.github.io/blog/tags/meta/"/>
     
     <category term="uni" scheme="http://verbey.github.io/blog/tags/uni/"/>
     
@@ -255,9 +255,9 @@
     
     
     
-    <category term="meta" scheme="http://verbey.github.io/blog/tags/meta/"/>
-    
     <category term="personal" scheme="http://verbey.github.io/blog/tags/personal/"/>
+    
+    <category term="meta" scheme="http://verbey.github.io/blog/tags/meta/"/>
     
   </entry>
   
