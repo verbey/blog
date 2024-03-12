@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Let&#39;s learn bash by building a simple png image compressor using inotify-tools and optipng!">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[Bash Code Along] Bash-scripting a picture optimizer!">
+<meta property="og:url" content="http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/">
+<meta property="og:site_name" content="Verblog">
+<meta property="og:description" content="Let&#39;s learn bash by building a simple png image compressor using inotify-tools and optipng!">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-03-12T16:30:29.000Z">
+<meta property="article:modified_time" content="2024-03-12T20:06:07.113Z">
+<meta property="article:author" content="Verbiturum">
+<meta property="article:tag" content="codealong">
+<meta property="article:tag" content="ca_easy">
+<meta property="article:tag" content="bash">
+<meta property="article:tag" content="programming">
+<meta property="article:tag" content="guide">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/blog/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/blog/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>[Bash Code Along] Bash-scripting a picture optimizer!</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/blog/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 7.1.1"><link rel="alternate" href="/blog/atom.xml" title="Verblog" type="application/atom+xml">
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/blog/">Home</a></li><!--
+     --><!--
+       --><li><a href="/blog/archives">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://codeberg.org/verbiturum">Projects</a></li><!--
+     --><!--
+       --><li><a href="/blog/atom.xml">RSS</a></li><!--
+     --><!--
+       --><li><a href="mailto:bivanestor@tutanota.com">mail</a></li><!--
+     --><!--
+       --><li><a href="/blog/search/">Search</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/blog/2024/01/18/thumb-key-is-great/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/&text=[Bash Code Along] Bash-scripting a picture optimizer!"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/&title=[Bash Code Along] Bash-scripting a picture optimizer!"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/&is_video=false&description=[Bash Code Along] Bash-scripting a picture optimizer!"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[Bash Code Along] Bash-scripting a picture optimizer!&body=Check out this article: http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/&title=[Bash Code Along] Bash-scripting a picture optimizer!"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/&title=[Bash Code Along] Bash-scripting a picture optimizer!"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/&title=[Bash Code Along] Bash-scripting a picture optimizer!"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/&title=[Bash Code Along] Bash-scripting a picture optimizer!"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/&name=[Bash Code Along] Bash-scripting a picture optimizer!&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/&t=[Bash Code Along] Bash-scripting a picture optimizer!"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Introduction"><span class="toc-number">1.</span> <span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Preparations"><span class="toc-number">2.</span> <span class="toc-text">Preparations</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Getting-started"><span class="toc-number">3.</span> <span class="toc-text">Getting started</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-neat-part"><span class="toc-number">4.</span> <span class="toc-text">The neat part</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Final-touches"><span class="toc-number">5.</span> <span class="toc-text">Final touches</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#What-to-do-next"><span class="toc-number">6.</span> <span class="toc-text">What to do next</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Conclusion"><span class="toc-number">7.</span> <span class="toc-text">Conclusion</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        [Bash Code Along] Bash-scripting a picture optimizer!
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Verbiturum</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2024-03-12T16:30:29.000Z" class="dt-published" itemprop="datePublished">2024-03-12</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/blog/tags/bash/" rel="tag">bash</a>, <a class="p-category" href="/blog/tags/ca-easy/" rel="tag">ca_easy</a>, <a class="p-category" href="/blog/tags/codealong/" rel="tag">codealong</a>, <a class="p-category" href="/blog/tags/guide/" rel="tag">guide</a>, <a class="p-category" href="/blog/tags/programming/" rel="tag">programming</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>Nothing better than learning coding by practicing, right? Right??? I sure hope you agree, because that is precisely what we will be doing right now!</p>
+<p>Bash is truly a blessing because you can start building amazing things using many kinds of libraries and CLI tools right away. </p>
+<p>For today, let’s try building the base for a picture optimi<strong>z</strong>er (I’m really torn how I should refer to the thing in the text, because I prefer the Bri’ish spelling but want to keep everything programming-related with the American spelling).</p>
+<h2 id="Preparations"><a href="#Preparations" class="headerlink" title="Preparations"></a>Preparations</h2><ul>
+<li>Install bash on your system if, for some reason, it is not installed yet.</li>
+<li>Install <a target="_blank" rel="noopener" href="https://linux.die.net/man/1/optipng"><code>optipng</code></a>.</li>
+<li>Install <a target="_blank" rel="noopener" href="https://github.com/inotify-tools/inotify-tools"><code>inotify-tools</code></a>.</li>
+<li>Get a grasp on the most basic bash syntax. Nothing too serious. Maybe skim through a few chapters of <a target="_blank" rel="noopener" href="https://tldp.org/LDP/abs/html/index.html">this</a> or watch a few YouTube videos. It doesn’t matter.</li>
+<li>Learn how to exit vim or get your text editor of choice ready by creating and opening a file named <code>imgoptimizer.sh</code></li>
+</ul>
+<h2 id="Getting-started"><a href="#Getting-started" class="headerlink" title="Getting started"></a>Getting started</h2><p>We will start with the usual, let’s add a shebang to our script:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br></pre></td></tr></table></figure>
+
+<p>Now, I’d like us to follow at least <a target="_blank" rel="noopener" href="https://github.com/progrium/bashstyle">some of the self-proclaimed best practices</a>. That’s why the <em>main</em> code will go in the… bingo! <code>main</code> function:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">main</span></span>() &#123;</span><br><span class="line">	<span class="built_in">set</span> -eo pipefail</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">main <span class="string">&quot;<span class="variable">$@</span>&quot;</span> <span class="comment"># here we call our function with the special parameter - $@ contains all parameters that were passed to the script</span></span><br></pre></td></tr></table></figure>
+
+<p>Note the <code>set -eo pipefail</code>. This thing makes the script failfast and makes the shell <a target="_blank" rel="noopener" href="https://unix.stackexchange.com/questions/597500/what-is-the-meaning-of-set-e-o-pipefail">punish us</a> if the script is poorly-written. Teehee~</p>
+<p>Obviously, our script has to know what directory to monitor. Let’s declare a variable called <code>DIRECTORY</code> (you can put any other value, really):</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">main</span></span>() &#123;</span><br><span class="line">	<span class="built_in">set</span> -eo pipefail</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">readonly</span> DIRECTORY=<span class="variable">$HOME</span>/Pictures <span class="comment"># readonly specifies a constant variable</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">main <span class="string">&quot;<span class="variable">$@</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="The-neat-part"><a href="#The-neat-part" class="headerlink" title="The neat part"></a>The neat part</h2><p>Now, let’s setup the part where we launch the watches for new files in our directory:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">inotifywait --monitor --recursive --event create --format <span class="string">&quot;%w%f&quot;</span> <span class="string">&quot;<span class="variable">$DIRECTORY</span>&quot;</span> |</span><br><span class="line">        <span class="keyword">while</span> <span class="built_in">read</span> filename; <span class="keyword">do</span></span><br><span class="line">                optipng -o4 <span class="string">&quot;<span class="variable">$filename</span>&quot;</span></span><br><span class="line">            <span class="keyword">fi</span></span><br><span class="line">        <span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+
+<p>Here’s the <a target="_blank" rel="noopener" href="https://linux.die.net/man/1/inotifywait">inotifywait docs</a> to help explain how the command works. Most of the used options are self-explanatory (since I used the full versions), I’ll only explain <code>--format</code>. <code>optipng</code> needs to know which file it should optimize. That’s why we <a target="_blank" rel="noopener" href="https://linuxhint.com/bash_pipe_tutorial/">pipe the output</a> of the <code>inotifywait</code> command to the while loop that reads the said output and uses <code>optipng</code> on it: <code>--format &quot;%w%f&quot;</code> outputs the absolute path to the newly created file.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">optipng -o4 <span class="string">&quot;<span class="variable">$filename</span>&quot;</span></span><br></pre></td></tr></table></figure>
+<p>Runs the <code>optipng</code> program on the file with the optimization level (the <code>-o</code> flag) of 4. Choosing the right level is a <a target="_blank" rel="noopener" href="https://plato.stanford.edu/entries/hegel-dialectics/#HegeDescHisDialMeth">dialectical process</a> which is driven by the contradiction of optimization quality vs the time it takes to run the whole thing. See for yourself what’s best for your machine. In my case, I settle for the level 4 as the most optimal (pun intended) one.</p>
+<p>Here’s how the thing should look so far:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">main</span></span>() &#123;</span><br><span class="line">	<span class="built_in">set</span> -eo pipefail</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">readonly</span> DIRECTORY=<span class="variable">$HOME</span>/Pictures</span><br><span class="line">	</span><br><span class="line">	inotifywait --monitor --recursive --event create --format <span class="string">&quot;%w%f&quot;</span> <span class="string">&quot;<span class="variable">$DIRECTORY</span>&quot;</span> |</span><br><span class="line">        <span class="keyword">while</span> <span class="built_in">read</span> filename; <span class="keyword">do</span></span><br><span class="line">                optipng -o4 <span class="string">&quot;<span class="variable">$filename</span>&quot;</span></span><br><span class="line">        <span class="keyword">done</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">main <span class="string">&quot;<span class="variable">$@</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>Let’s try running it with</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash imgoptimize.sh</span><br></pre></td></tr></table></figure>
+
+<p>Try to create a new <code>.png</code> file in the directory, for example, by creating a screenshot that would be saved there.</p>
+<p>Wait, oh nyo! Sometimes it errors out, because <code>inotifywait</code> passes the filename <em>before</em> the file is actually fully created!</p>
+<p>Let’s add a <code>sleep</code> command with <code>3s</code> as its argument. This time should be just enough to wait until the file is fully written to the disk.</p>
+<p>We might as well wrap up the loop in an if statement checking if the file is a PNG one, just in case:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">main</span></span>() &#123;</span><br><span class="line">	<span class="built_in">set</span> -eo pipefail</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">readonly</span> DIRECTORY=<span class="variable">$HOME</span>/Pictures</span><br><span class="line">	</span><br><span class="line">	inotifywait --monitor --recursive --event create --format <span class="string">&quot;%w%f&quot;</span> <span class="string">&quot;<span class="variable">$DIRECTORY</span>&quot;</span> |</span><br><span class="line">        <span class="keyword">while</span> <span class="built_in">read</span> filename; <span class="keyword">do</span></span><br><span class="line">            <span class="keyword">if</span> [[ <span class="string">&quot;<span class="variable">$filename</span>&quot;</span> == *.png ]]; <span class="keyword">then</span></span><br><span class="line">                <span class="built_in">sleep</span> 3s</span><br><span class="line">                optipng -o4 <span class="string">&quot;<span class="variable">$filename</span>&quot;</span></span><br><span class="line">            <span class="keyword">fi</span></span><br><span class="line">        <span class="keyword">done</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">main <span class="string">&quot;<span class="variable">$@</span>&quot;</span></span><br></pre></td></tr></table></figure>
+<p>Great, now let’s try running the thing again… It works! <em>But</em> since <code>optipng</code> overrides the file, it triggers the <code>inotify</code> watches again on the technically same file. Luckily, <code>optipng</code> won’t try to optimize an already optimized file but it would still be nicer and faster for the script if we didn’t bother with such files at all!</p>
+<p>The most obvious solution is to add a variable that will store the last filename. Thus, the script should look something like this:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">main</span></span>() &#123;</span><br><span class="line">	<span class="built_in">set</span> -eo pipefail</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">readonly</span> DIRECTORY=<span class="variable">$HOME</span>/Pictures</span><br><span class="line">	</span><br><span class="line">	last_filename=<span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">    inotifywait --monitor --recursive --event create --format <span class="string">&quot;%w%f&quot;</span> <span class="string">&quot;<span class="variable">$DIRECTORY</span>&quot;</span> |</span><br><span class="line">        <span class="keyword">while</span> <span class="built_in">read</span> filename; <span class="keyword">do</span></span><br><span class="line">            <span class="keyword">if</span> [[ <span class="string">&quot;<span class="variable">$filename</span>&quot;</span> == *.png ]] &amp;&amp; [[ <span class="string">&quot;<span class="variable">$filename</span>&quot;</span> != <span class="string">&quot;<span class="variable">$last_filename</span>&quot;</span> ]]; <span class="keyword">then</span></span><br><span class="line">                last_filename=<span class="string">&quot;<span class="variable">$filename</span>&quot;</span></span><br><span class="line">                <span class="built_in">sleep</span> 3s</span><br><span class="line">                optipng -o4 <span class="string">&quot;<span class="variable">$filename</span>&quot;</span></span><br><span class="line">            <span class="keyword">fi</span></span><br><span class="line">        <span class="keyword">done</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">main <span class="string">&quot;<span class="variable">$@</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Final-touches"><a href="#Final-touches" class="headerlink" title="Final touches"></a>Final touches</h2><p>We have a quite useful script now, but we can make it a little bit better if we move the config to a separate file.</p>
+<p>In your terminal, create a directory and a file for the rc of our script. For example, like this:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> ~/.config/imgoptimize &amp;&amp; <span class="built_in">touch</span> ~/.config/imgoptimize/imgoptimizerc</span><br></pre></td></tr></table></figure>
+
+<p>In that file, let’s specify the directory we want our script to monitor:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DIRECTORY=/home/user/Pictures</span><br></pre></td></tr></table></figure>
+
+<p>We should now rewrite our script to use the config file:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">main</span></span>() &#123;</span><br><span class="line">    <span class="built_in">set</span> -eo pipefail</span><br><span class="line"></span><br><span class="line">    <span class="built_in">readonly</span> CONFIG_FILE=<span class="string">&quot;<span class="variable">$HOME</span>/.config/imgoptimize/imgoptimizerc&quot;</span></span><br><span class="line">	<span class="built_in">readonly</span> DIRECTORY=<span class="string">&quot;<span class="subst">$(cat <span class="string">&quot;<span class="variable">$CONFIG_FILE</span>&quot;</span> | grep --regexp ^DIRECTORY | cut --delimiter <span class="string">&quot;=&quot;</span> --fields 2)</span>&quot;</span></span><br><span class="line">    </span><br><span class="line">    last_filename=<span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">    inotifywait --monitor --recursive --event create --format <span class="string">&quot;%w%f&quot;</span> <span class="string">&quot;<span class="variable">$DIRECTORY</span>&quot;</span> |</span><br><span class="line">        <span class="keyword">while</span> <span class="built_in">read</span> filename; <span class="keyword">do</span></span><br><span class="line">            <span class="keyword">if</span> [[ <span class="string">&quot;<span class="variable">$filename</span>&quot;</span> == *.png ]] &amp;&amp; [[ <span class="string">&quot;<span class="variable">$filename</span>&quot;</span> != <span class="string">&quot;<span class="variable">$last_filename</span>&quot;</span> ]]; <span class="keyword">then</span></span><br><span class="line">                last_filename=<span class="string">&quot;<span class="variable">$filename</span>&quot;</span></span><br><span class="line">                <span class="built_in">sleep</span> 3s</span><br><span class="line">                optipng -o4 <span class="string">&quot;<span class="variable">$filename</span>&quot;</span></span><br><span class="line">            <span class="keyword">fi</span></span><br><span class="line">        <span class="keyword">done</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">main <span class="string">&quot;<span class="variable">$@</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>Check the DIRECTORY variable out: </p>
+<p><code>$()</code> is the syntax for executing shell commands in a subshell (command substitution). In there, I first use the <code>cat</code> command to output the contents of a file, then pipe the output to <code>grep</code> command that uses a regular expression to find the line containing the constant <code>DIRECTORY</code>. What’s left now is to extract the actual path, which I do using the <code>cut</code> command: <code>--delimiter</code> option specifies the character where the string will be split, and the <code>--fields</code> specifies what part of the split string the command should return.</p>
+<p>Note that we could just do</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> <span class="variable">$HOME</span>/.config/imgoptimize/imgoptimizerc</span><br></pre></td></tr></table></figure>
+
+<p>which will execute the file as shell code, and so simply declare the <code>DIRECTORY</code> variable, but that  also means <em>all</em> code from the file will be executed, which may even lead to <a target="_blank" rel="noopener" href="https://unix.stackexchange.com/questions/175648/use-config-file-for-my-shell-script">a hole in security</a>. It’s <em>unlikely</em> that something like that will happen to you with such a script, though.</p>
+<h2 id="What-to-do-next"><a href="#What-to-do-next" class="headerlink" title="What to do next"></a>What to do next</h2><p>You didn’t think the whole Code Along would be just me holding your hand and walking you through the whole thing, did you? Try extending the script in some ways to solidify what you might’ve learned today. For example, you can:</p>
+<ul>
+<li>Add more config options! Optimization levels for <code>optipng</code>, <code>sleep</code> time, etc.</li>
+<li>Make the script “optimize” (compress) other image formats, such as <code>jpg</code>. <a target="_blank" rel="noopener" href="https://imagemagick.org/"><code>imagemagick</code></a> can <a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/7261855/recommendation-for-compressing-jpg-files-with-imagemagick">help you</a> with that task.</li>
+<li>Research how to make the script automatically execute on system start.- See what other things you can do with the images, such as adjusting the resolution to match your monitor. Why have a 2500x2500 image on your computer if your display’s resolution is only 1920x1080?</li>
+</ul>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>Studying programming by building things is great, and it’s even better when you have an idea of what you can do. That’s why I wanted to start the Code Along series. Procrastination is a common issue in self-study, so I genuinely hope that these series will help someone ignite their enthusiasm and learn more quickly and easily.</p>
+<p>ヾ(*▼・▼)ﾉ⌒☆</p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/blog/">Home</a></li>
+        
+          <li><a href="/blog/archives">Writing</a></li>
+        
+          <li><a target="_blank" rel="noopener" href="https://codeberg.org/verbiturum">Projects</a></li>
+        
+          <li><a href="/blog/atom.xml">RSS</a></li>
+        
+          <li><a href="mailto:bivanestor@tutanota.com">mail</a></li>
+        
+          <li><a href="/blog/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Introduction"><span class="toc-number">1.</span> <span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Preparations"><span class="toc-number">2.</span> <span class="toc-text">Preparations</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Getting-started"><span class="toc-number">3.</span> <span class="toc-text">Getting started</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-neat-part"><span class="toc-number">4.</span> <span class="toc-text">The neat part</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Final-touches"><span class="toc-number">5.</span> <span class="toc-text">Final touches</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#What-to-do-next"><span class="toc-number">6.</span> <span class="toc-text">What to do next</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Conclusion"><span class="toc-number">7.</span> <span class="toc-text">Conclusion</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/&text=[Bash Code Along] Bash-scripting a picture optimizer!"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/&title=[Bash Code Along] Bash-scripting a picture optimizer!"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/&is_video=false&description=[Bash Code Along] Bash-scripting a picture optimizer!"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=[Bash Code Along] Bash-scripting a picture optimizer!&body=Check out this article: http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/&title=[Bash Code Along] Bash-scripting a picture optimizer!"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/&title=[Bash Code Along] Bash-scripting a picture optimizer!"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/&title=[Bash Code Along] Bash-scripting a picture optimizer!"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/&title=[Bash Code Along] Bash-scripting a picture optimizer!"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/&name=[Bash Code Along] Bash-scripting a picture optimizer!&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://verbey.github.io/blog/2024/03/12/imgoptimizer-code-along/&t=[Bash Code Along] Bash-scripting a picture optimizer!"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2023-2024
+    Verbiturum
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/blog/">Home</a></li><!--
+     --><!--
+       --><li><a href="/blog/archives">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://codeberg.org/verbiturum">Projects</a></li><!--
+     --><!--
+       --><li><a href="/blog/atom.xml">RSS</a></li><!--
+     --><!--
+       --><li><a href="mailto:bivanestor@tutanota.com">mail</a></li><!--
+     --><!--
+       --><li><a href="/blog/search/">Search</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+ 
+  <link
+    rel="preload"
+    href="/blog/lib/font-awesome/css/all.min.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <noscript
+    ><link
+      rel="stylesheet"
+      href="/blog/lib/font-awesome/css/all.min.css"
+  /></noscript>
+
+
+    <!-- jquery -->
+
+  
+<script src="/blog/lib/jquery/jquery.min.js"></script>
+
+
+
+
+
+<!-- clipboard -->
+
+  
+    
+<script src="/blog/lib/clipboard/clipboard.min.js"></script>
+
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/blog/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
